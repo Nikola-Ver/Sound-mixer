@@ -1,7 +1,6 @@
 {
   "name": "sound-mixer",
   "version": "0.1.0",
-  "private": true,
   "description": "Chrome extension to control any tab's volume",
   "author": "Nikola-Ver",
   "dependencies": {
