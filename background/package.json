@@ -1,0 +1,32 @@
+{
+  "name": "sound-mixer",
+  "version": "1.1.0",
+  "description": "Chrome extension to control any tab's volume",
+  "files": [
+    "dist",
+    "!*.map"
+  ],
+  "scripts": {
+    "build": "parcel build background.ts --out-dir ../build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Nikola-Ver",
+  "devDependencies": {
+    "@types/material-components-web": "^0.43.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "sass": "^1.23.2",
+    "tslint": "^5.20.0",
+    "tslint-config-standeerd": "^4.0.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "chrome-extension-async": "^3.4.1",
+    "material-components-web": "^3.2.0"
+  }
+}

@@ -1,0 +1,26 @@
+.text-slider {
+  width: 86%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: cursive !important;
+}
+
+.root-slider {
+  user-select: none;
+  color: white;
+  height: 60px;
+
+  &:first-child {
+    margin-top: 10px;
+  }
+}
+
+.input-slider {
+  width: 50px;
+  font-family: cursive !important;
+
+  &::after {
+    border-color: #00ffa1 !important;
+  }
+}

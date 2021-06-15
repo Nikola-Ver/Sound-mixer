@@ -1,0 +1,59 @@
+.sliders-group {
+  $defaultColor: white;
+  $activeColor: #00ffa1;
+  overflow: hidden;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+
+    .button {
+      clip-path: polygon(0 0, 100% 50%, 0 100%, 35% 50%);
+      background-color: $defaultColor;
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+      transition: 0.7s background-color, 0.3s transform, 0.5s clip-path;
+    }
+
+    .text {
+      font-size: 20px;
+      color: $defaultColor;
+      height: fit-content;
+      font-family: cursive;
+      user-select: none;
+      transition: 0.7s color;
+
+      span {
+        color: $activeColor;
+      }
+    }
+  }
+
+  .content {
+    padding-left: 35px;
+    padding-right: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &.open {
+    .button {
+      clip-path: polygon(100% 50%, 0 100%, 35% 50%, 0 0);
+      transform: rotate(90deg);
+      background-color: $activeColor;
+    }
+
+    .text {
+      color: $activeColor;
+    }
+
+    .content {
+      padding-bottom: 20px;
+    }
+  }
+}
