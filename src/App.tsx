@@ -61,16 +61,6 @@ function App() {
     })();
   }, []);
 
-  let searchName = '';
-
-  document.onkeydown = (e) => {
-    if (e.key !== 'Escape') {
-      searchName += e.key.length === 1 ? e.key : '';
-    } else {
-      searchName = '';
-    }
-  };
-
   return (
     <>
       {tabs.map((element, index) => (
