@@ -7,7 +7,8 @@
     "!*.map"
   ],
   "scripts": {
-    "build": "parcel build background.ts --out-dir ../build"
+    "build": "parcel build background.ts --out-dir ../build",
+    "install": "sudo npm i --unsafe-perm=true --allow-root"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "@types/material-components-web": "^0.43.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "parcel-bundler": "^1.12.4",
+    "parcel-bundler": "^1.12.5",
     "parcel-plugin-static-files-copy": "^2.2.1",
     "sass": "^1.23.2",
     "tslint": "^5.20.0",
